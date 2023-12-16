@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*start editing from here*/
+
+:root {
+    --form-font: 'Roboto', sans-serif;
+    --rest-font: 'Open Sans', sans-serif;
+}
+
+#container-form strong {
+    font-weight: bold;
+}
+
+#container-form em {
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    background-color: rgb(255, 240, 218);
+}
+
+#container-image {
+    display: flex;
+    width: 33%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.527);
+    position: relative;
+    bottom: 15%;
+}
+
+#logo-image {
+    width: 5rem;
+    padding: 1rem;
+}
+
+#logo-text {
+    color: rgb(255, 230, 192);
+    font-size: 3rem;
+    padding-right: 5rem;
+}
+
+#photo-by {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.575);
+    bottom: 2%;
+    font-size: 0.9rem;
+    padding-right: 2.5rem;
+}
+
+.unplash {
+    color: hsla(208, 100%, 97%, 0.726);
+}
+
+/*here is were section Nº1 finish*/
+
+#container-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    width: 60vw;
+    background-color: antiquewhite;
+}
+
+#quote {
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--rest-font);
+    font-weight: lighter;
+    line-height: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5m;
+}
+
+#form-title {
+    font-family: var(--rest-font);
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+#form-input {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--form-font);
+    font-size: small;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: bisque;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+    background-color: #f1d3aa;
+}
+
+#form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+input {
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 0.2rem;
+    height: 1.5rem;
+    width: 11rem;
+    transition: border-color 0.3s ease-in-out;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input:focus-visible,
+input:valid {
+    border-color: #0055ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#button {
+    border-color: black;
+    box-shadow: none;
+    margin-top: 0.9rem;
+    font-family: var(--form-font);
+    width: 11.5rem;
+    height: 2rem;
+    background-color: #6d925c;
+}
+
+#third-layer {
+    font-family: var(--rest-font);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+}
+
+#log-in {
+    color: #6d925c;
+}
